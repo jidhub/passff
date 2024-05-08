@@ -84,6 +84,13 @@ PassFF.Page = (function () {
       inputNames.push(placeholder);
     }
 
+    // there is actually no such thing as a "label" attribute, but aliexpress.com uses it
+    // https://github.com/passff/passff-host/issues/68
+    let label = input.getAttribute('label');
+    if (label) {
+      inputNames.push(label);
+    }
+
     let autocomplete = getAutocompleteAttr(input);
     if (autocomplete && ["on","off"].indexOf(autocomplete) === -1) {
       inputNames.push(autocomplete);
