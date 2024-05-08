@@ -596,7 +596,7 @@ PassFF.Page = (function () {
       var passURL = new URL(passItemURL);
     } catch(e) {
       return PassFF.Page.confirm(
-        _("passff_error_getting_url_pass", passItemURL) + " "
+        _("passff_error_getting_url_pass", passItemURL) + "```" + e.message + "```"
         + _("passff_override_antiphishing_confirmation"));
     }
 
