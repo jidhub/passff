@@ -28,7 +28,8 @@ The host application allows the extension to communicate with `pass` on your sys
 
 ##### PassFF extension
 Install the current release of PassFF for your browser:
-  - [Firefox](https://addons.mozilla.org/firefox/addon/passff)
+  - [Firefox for desktop](https://addons.mozilla.org/firefox/addon/passff)
+  - [Firefox for Android](https://addons.mozilla.org/android/addon/passff/)
 
 Previous releases are available for download as XPI files from [our releases page](https://github.com/passff/passff/releases). However, this is strongly discouraged for security reasons!
 
